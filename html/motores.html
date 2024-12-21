@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Galería - Mundo de Coches</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Incluimos la libreria para los logos -->
+    <script src="https://kit.fontawesome.com/a0ab5880a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header class="p-3 nav-color">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/logo.webp" alt="Logo" width="70" height="70"
+                        class="d-inline-block align-text-top rounded-3">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="../index.html" class="nav-link fw-bold px-3 tx-blanco"><i
+                                    class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li class="nav-item"><a href="motores.html" class="nav-link fw-bold px-3 nav-seleccionado"><i
+                                    class="fa-solid fa-car-on"></i> Motores</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link fw-bold px-3 tx-blanco"><i
+                                    class="fa-solid fa-address-book"></i> Contáctanos</a></li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link fw-bold px-3 tx-blanco"><i
+                                    class="fa-solid fa-newspaper"></i> Noticias</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <!-- Galería de Imágenes -->
+        <section id="galeria">
+            <h1 class="text-center mb-4">Galería de Coches</h1>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="../assets/ferrari.webp" class="img-fluid rounded" alt="Ferrari">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="../assets/porsche.PNG" class="img-fluid rounded" alt="Porsche">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="../assets/lambo.PNG" class="img-fluid rounded" alt="Lamborghini">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Noticias -->
+        <section id="noticias" class="my-5">
+            <h2 class="text-center mb-4">Últimas Noticias</h2>
+            <div class="row">
+                <!-- Noticia 1 -->
+
+
+                <div class=" col-md-4 noticia" id="noticia1">
+                    <h3 class="mt-4">El Partido Popular Europeo pide eliminar la prohibición de los coches térmicos en
+                        2035</h3>
+                    <img src="../assets/noticia1.jpg" alt="imagennoticia1">
+                    <p class="resumen">Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo pide eliminar
+                        la prohibición de los coches térmicos en 2035</p>
+                    <button class="btn-mas-info" onclick="abrirNoticia('noticia1')">Más información</button>
+                    <div class="noticia-expandida">
+                        <h3>Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo pide eliminar la
+                            prohibición de los coches térmicos en 2035</h3>
+                        <p>A vueltas con la prohibición de los coches de combustión interna para el 2035 y los límites
+                            de emisiones de CO2 para el año que viene. El mayor grupo político del Parlamento Europeo
+                            vuelve a meter presión para aliviar estas medidas.</p>
+                        <img src="../assets/noticia1.jpg" alt="imagennoticia1">
+                        <p>La industria automovilística europea se enfrenta a enormes retos en los próximos tiempos. En
+                            el corto plazo, gigantes como Volkswagen o Stellantis tienen que afrontar profundas
+                            reestructuraciones internas. En el medio plazo, todos los fabricantes deberán afrontar
+                            fuertes sanciones si no cumplen con las emisiones medias de CO2 impuestas por Europa para el
+                            año que viene.</p>
+                        <p>Y ya en el largo plazo sigue estando el 2035 como fecha límite para que las marcas sigan
+                            vendiendo vehículos con motor de combustión. A este panorama se le suma el debilitamiento de
+                            la demanda de coches eléctricos a nivel mundial y la presión de las marcas chinas en su
+                            expansión con sus coches más asequibles.</p>
+                        <button class="btn-cerrar" onclick="cerrarNoticia('noticia1')">Cerrar</button>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card noticia">
+                        <img src="../assets/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Evento de Coches Clásicos</h5>
+                            <p class="card-text">Un evento imperdible para los amantes de los coches clásicos.</p>
+                            <button class="btn btn-primary btn-expand">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4">
+                    <div class="card noticia">
+                        <img src="../assets/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tecnología Autónoma en 2024</h5>
+                            <p class="card-text">Descubre los avances en conducción autónoma que revolucionarán el 2024.
+                            </p>
+                            <button class="btn btn-primary btn-expand">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-bg-dark p-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Mundo de Coches. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function abrirNoticia(id) {
+            // Añadimos la clase expandida para mostrar la noticia
+            const noticia = document.getElementById(id);
+            noticia.classList.add('expandida');
+        }
+
+        function cerrarNoticia(id) {
+            // Quitamos la clase expandida para cerrar la noticia
+            const noticia = document.getElementById(id);
+            noticia.classList.remove('expandida');
+        }
+
+    </script>
+</body>
+
+</html>
