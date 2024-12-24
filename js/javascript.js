@@ -1,3 +1,6 @@
+// TODO Hacer que el @initMap se ejecute despues de cargar la pagina! //
+
+
 // Inicialización del mapa
 function initMap() {
     // Coordenadas de ejemplo (Madrid)
