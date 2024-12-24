@@ -60,66 +60,66 @@
         <!-- contenedor fondo de pantalla -->
         <div class="fondo-pantalla">
 
-            <!-- Formulario y Detalles de Contacto -->
             <div class="container my-5">
-                <div class="row contact-section">
-                    <div class="col-lg-6 mb-4">
-                        <div class="contact-form-container">
-                            <h2>¿Tienes alguna pregunta?</h2>
-                            <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                            <form id="contactForm" class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" placeholder="Empresa">
-                                    </div>
+
+                <!-- **Formulario y Contacto** -->
+                <div class="row seccion-contacto">
+                    <!-- **Formulario** -->
+                    <div class="col-lg-6 mb-4 espaciado-2">
+                        <h2>¿Quieres contactar con nosotros?</h2>
+                        <p>Rellena el formulario y podremos escuchar tus observaciones.</p>
+                        <!-- !!Cambiar el id y añadir el reenvio de datos a la pagina esa -->
+                        <form id="contactForm" class="">
+                            <div class="row">
+                                <div class=" mb-3">
+                                    <input type="text" class="form-control" placeholder="Nombre" required>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <input type="tel" class="form-control" placeholder="Teléfono">
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
                                 </div>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Asunto" required>
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" placeholder="Teléfono">
                                 </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Asunto" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
                     </div>
+                    <!-- **Contacto** -->
                     <div class="col-lg-6 mb-4">
-                        <div class="contact-info-container">
+                        <div class="informacion-contenedor">
                             <h2>Estamos aquí para ayudarte</h2>
-                            <div class="contact-info">
-                                <div class="info-item">
+                            <div>
+                                <div class="info">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <div>
                                         <h3>Ubicación</h3>
-                                        <p>Av. de los Automóviles 123<br>28001 Madrid, España</p>
+                                        <p>Av. de los Automóviles 123</p>
+                                        <p>28001 Madrid, España</p>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info">
                                     <i class="fas fa-phone"></i>
                                     <div>
                                         <h3>Teléfono</h3>
                                         <p>+34 91 234 5678</p>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info">
                                     <i class="fas fa-envelope"></i>
                                     <div>
                                         <h3>Email</h3>
                                         <p>info@autoelite.com</p>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info">
                                     <i class="fas fa-clock"></i>
                                     <div>
                                         <h3>Horario</h3>
@@ -130,8 +130,43 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- **Servicios** -->
+                <div class="row mt-5 espaciado-4">
+                    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+                    <div class="col-md-4 mb-4">
+                        <div class="tarjeta-servicios">
+                            <i class="fas fa-car"></i>
+                            <h3>Venta de Vehículos</h3>
+                            <p>Nuevos y de ocasión con las mejores garantías</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="tarjeta-servicios">
+                            <i class="fas fa-tools"></i>
+                            <h3>Servicio Técnico</h3>
+                            <p>Mantenimiento y reparación por expertos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="tarjeta-servicios">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Financiación</h3>
+                            <p>Opciones flexibles adaptadas a ti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ** MAPA ** -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="map-container">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 
@@ -139,43 +174,11 @@
 
     </footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz6ptO1GXo-Do814AA9AKb3qc4UriJIa8&callback=initMap"
+        async defer></script>
+
+    <script src="../js/javascript.js"></script>
 
 </body>
 
 </html>
-
-<!-- 
-contenedor principal del formulario
-<div class="container-fluid px-2 py-5">
-    <div class="row gap-4 align-items-center justify-content-center">
-        
-        <div class="col-12 col-md-5 p-4 rounded-4 bg-principal text-center shadow-sm">
-            <h1>MundoCoches</h1>
-            <img src="../assets/FotoPerfil.JPG" alt="Foto del autor" class="img-fluid rounded-circle my-4"
-                style="width: 150px; height: 150px;">
-            <h3>Datos de contacto</h3>
-            <p><strong>Nombre: </strong>Dario</p>
-            <p><strong>Apellidos: </strong>Rodríguez Pajares</p>
-            <p><strong>Email: </strong>darrodpaj@gmail.com</p>
-        </div>
-
-        <div class="col-12 col-md-5 p-4 rounded-4 bg-secundario text-white shadow-sm">
-            <h1>Contacta con nosotros</h1>
-            <form action="enviar.php" method="post">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </div>
-</div> -->
