@@ -1,4 +1,4 @@
-main{
+main {
   color: white;
 }
 
@@ -26,9 +26,11 @@ main{
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -83,7 +85,7 @@ main{
   background: rgba(0, 0, 0, 0.6);
 }
 
-.cabezera-contenido{
+.cabezera-contenido {
   position: relative;
   z-index: 3;
 }
@@ -91,7 +93,7 @@ main{
 
 @media (max-width: 768px) {
   .cabezera {
-      height: 300px;
+    height: 300px;
   }
 }
 
@@ -120,15 +122,18 @@ main{
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .noticia img {
   max-width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
 .noticia .resumen {
   font-size: 0.9em;
   color: #555;
 }
+
 .noticia .btn-mas-info {
   background: #007bff;
   color: white;
@@ -138,6 +143,7 @@ main{
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .noticia .btn-mas-info:hover {
   background: #0056b3;
 }
@@ -161,13 +167,15 @@ main{
   opacity: 0;
   visibility: hidden;
 }
+
 .noticia-expandida h3 {
   margin-top: 0;
 }
+
 .noticia-expandida .btn-cerrar {
   background: #dc3545;
   color: white;
-  
+
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -176,6 +184,7 @@ main{
   top: 10px;
   right: 10px;
 }
+
 .noticia-expandida .btn-cerrar:hover {
   background: #a71d2a;
 }
@@ -185,4 +194,73 @@ main{
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   visibility: visible;
+}
+
+
+
+
+
+/* Formulario de Contacto */
+.contact-section {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-container {
+  padding: 2rem;
+}
+
+.form-control {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-color);
+  padding: 0.8rem;
+}
+
+.form-control:focus {
+  background-color: var(--input-bg);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+  transform: translateY(-2px);
+}
+
+/* Información de Contacto */
+.contact-info-container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
