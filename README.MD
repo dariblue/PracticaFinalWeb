@@ -1,6 +1,10 @@
 
 # Buenos dias
 
+TODO
+
+### El icono del navbar no redirecciona bien a index.html
+
 Aqui añado parte de codigo que será util mas adelante para las noticias y mantener ahora limpio el css
 
 ~~~~
