@@ -34,7 +34,8 @@
                         <li class="nav-item"><a href="noticias.html" class="nav-link fw-bold px-3 tx-blanco"><i
                                     class="fa-solid fa-newspaper"></i> Noticias</a></li>
                         <li class="nav-item"><a href="contacto.html" class="nav-link fw-bold px-3 nav-seleccionado"><i
-                                    class="fa-solid fa-address-book"></i> Contáctanos</a></li>
+                                    class="fa-solid fa-address-book"></i>
+                                Contáctanos</a></li>
                     </ul>
                 </div>
             </nav>
@@ -58,12 +59,12 @@
 
 
         <!-- contenedor fondo de pantalla -->
-        <div class="fondo-pantalla">
+        <div class="fondo-pantalla py-3">
 
             <div class="container my-5">
 
                 <!-- **Formulario y Contacto** -->
-                <div class="row seccion-contacto">
+                <div class="row contenedor-oscuro">
                     <!-- **Formulario** -->
                     <div class="col-lg-6 mb-4 espaciado-2">
                         <h2>¿Quieres contactar con nosotros?</h2>
@@ -158,20 +159,84 @@
                 </div>
 
                 <!-- ** MAPA ** -->
-                <div class="row mt-5">
+                <div class="row my-5">
                     <div class="col-12">
                         <div class="map-container">
                             <div id="map"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="separador">
+                <div class="opacidad"></div>
+            </div>
+
+            <div class="container my-5">
+                <!-- **DATOS DE CONTACTO** -->
+                <div class="my-5 espaciado-2 row contenedor-oscuro">
+                    <h2>Datos de contacto:</h2>
+
+                    <div class="pt-3 col-md-6">
+                        <h4>Autor:</h4>
+                        <p> Dario Rodriguez Pajares</p>
+
+                        <h4>Correo Electronico: </h4>
+                        <p>darrodpaj@gmail.com</p>
+
+                        <h4>Numero de contacto:</h4>
+                        <p>+34 666 666 666</p>
+
+                        <h4>Pagina Web:</h4>
+                        <a href="https://bestdariblue.tech">bestdariblue.tech</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Foto:</h4>
+                        <img src="../assets/FotoDario.JPG" class="ms-5 img-fluid" width="290" alt="Imagen Aventador">
+
+                    </div>
+
+
+                </div>
+
+
 
             </div>
         </div>
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>MundoMotor</h4>
+                    <p>Tu pagina de motores de confianza.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Vehículos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Síguenos</h4>
+                    <div class="iconos-footer">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 MundoMotor. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz6ptO1GXo-Do814AA9AKb3qc4UriJIa8&callback=initMap"
