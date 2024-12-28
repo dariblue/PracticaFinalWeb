@@ -16,8 +16,13 @@
 > - [x] Navbar no funciona el boton en dispositivos pequeños
 > - [x] Añadir partes de motor en forma de galeria a su pagina
 
-
 ---
+
+# Paginas
+
+## Index
+
+idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
 
 ## Pagina Motores
 
@@ -40,6 +45,8 @@
 
 ## Pagina noticias
 
+  Tiene que incluir al menos 2 videos, asique tendré que hacer al menos un par de noticias con un video al hacer grande la noticia.
+  Hay que añadir un baner!?
   La pagina de noticias funciona con la siguiente extructura:
 
 ~~~ ```html
