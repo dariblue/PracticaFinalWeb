@@ -67,8 +67,6 @@ body {
   padding: 4rem 0;
 }
 
-
-
 .opacidad {
   position: absolute;
   top: 0;
@@ -88,6 +86,16 @@ body {
   padding-top: 80px;
 }
 
+.cabezera2 {
+  position: relative;
+  height: 400px;
+  background-image: url(../assets/cabezera3.jpg);
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
 .separador {
   position: relative;
   width: 100%;
@@ -100,8 +108,10 @@ body {
 
 .cabezera-contenido {
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
+
+/* * Revisar esto */
 
 
 @media (max-width: 768px) {
@@ -111,8 +121,17 @@ body {
 }
 
 
+.contenedor-oscuro {
+  background-color: #242424;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 20px #0000004e;
+}
 
 
+/* % INDEX HTML  */
 
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
@@ -125,13 +144,20 @@ body {
   object-fit: cover;
 }
 
+/* % FIN INDEX HTML  */
+
+
+
+/* % NOTICIAS  */
+
 .noticia {
   position: relative;
   background: #f5f5f5;
-  border: 1px solid #ddd;
+  color: black;
   border-radius: 8px;
   padding: 15px;
-  margin: 20px 0;
+  margin: 20px 15px;
+  width: 31.6%;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -142,53 +168,30 @@ body {
   margin-bottom: 10px;
 }
 
-.noticia .resumen {
+.resumen {
   font-size: 0.9em;
   color: #555;
 }
 
-.noticia .btn-mas-info {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.noticia .btn-mas-info:hover {
-  background: #0056b3;
-}
-
-.noticia-expandida {
+.mas-noticia {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
   width: 90%;
   max-width: 800px;
   height: 80%;
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   z-index: 999;
   padding: 20px;
-  transition: transform 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
-.noticia-expandida h3 {
-  margin-top: 0;
-}
-
-.noticia-expandida .btn-cerrar {
+.btn-cerrar {
   background: #dc3545;
   color: white;
-
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -198,39 +201,15 @@ body {
   right: 10px;
 }
 
-.noticia-expandida .btn-cerrar:hover {
+.btn-cerrar:hover {
   background: #a71d2a;
 }
 
-/* Estado activo de la noticia expandida */
-.noticia.expandida .noticia-expandida {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  visibility: visible;
-}
+/* % FIN NOTICIAS  */
 
 
 
-
-
-
-
-
-
-
-/* % CSS CONTACTO */
-.contenedor-oscuro {
-  background-color: #242424;
-  border-radius: 10px;
-  padding: 2rem;
-  margin-top: -50px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 4px 20px #0000004e;
-}
-
-
-
+/* % CONTACTO */
 .form-control {
   background-color: #333333;
   border: 1px solid #404040;
@@ -245,20 +224,19 @@ body {
   box-shadow: none;
 }
 
-.btn-primary {
+.btn-formulario {
   background-color: #ff4d4d;
   border-color: #ff4d4d;
   padding: 0.8rem 2rem;
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.btn-formulario:hover {
   background-color: #404040;
   border-color: #ff4d4d;
   transform: translateY(-2px);
 }
 
-/* Informacion de Contacto */
 .informacion-contenedor {
   padding: 2rem;
   height: 100%;
@@ -282,8 +260,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
-/* Servicios */
 .tarjeta-servicios {
   background-color: #242424;
   padding: 2rem;
@@ -302,8 +278,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
-/* Mapa */
 .map-container {
   height: 400px;
   border-radius: 10px;
@@ -315,14 +289,7 @@ body {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
+/* % FIN CONTACTO */
 
 
 
@@ -375,4 +342,4 @@ footer ul li a:hover {
   color: #ff4d4d;
 }
 
-/* % FOOTER */
+/* % FIN FOOTER */

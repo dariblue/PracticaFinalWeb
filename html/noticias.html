@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Incluimos la libreria para los logos -->
     <script src="https://kit.fontawesome.com/a0ab5880a7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
-    <!-- NavBar -->
+    <!-- % NavBar -->
     <header class="p-3 nav-color">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
@@ -45,6 +46,94 @@
 
 
     <main>
+        <!-- % Cabezera de pagina -->
+        <div class="cabezera2">
+            <div class="opacidad"></div>
+
+            <div class="cabezera-contenido p-5">
+                <h1>Noticias mundo motor</h1>
+                <p>Aqui podrás encontrar las ultimas noticias del mundo del motor</p>
+            </div>
+        </div>
+
+
+        <div class="fondo-pantalla pt-5">
+
+
+            <!-- Sección de Noticias -->
+            <section id="noticias" class="p-5 contenedor-oscuro mx-5">
+                <h2 class=" text-center mb-4">Últimas Noticias</h2>
+                <div class="row">
+
+
+                    <!-- Noticia 1 -->
+                    <div class="col-md-4 noticia">
+                        <h3 class="mt-2">El Partido Popular Europeo pide eliminar la prohibición de los coches térmicos
+                            en
+                            2035</h3>
+                        <img src="../assets/noticia1.jpg" alt="imagen noticia1">
+                        <p class="resumen">Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo pide
+                            eliminar
+                            la prohibición de los coches térmicos en 2035</p>
+                        <button class="btn btn-primary" onclick="abrirNoticia('#noticia1')">Leer más</button>
+
+                        <div class="mas-noticia rounded-3" id="noticia1">
+                            <h3>Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo pide eliminar la
+                                prohibición de los coches térmicos en 2035</h3>
+                            <p>A vueltas con la prohibición de los coches de combustión interna para el 2035 y los
+                                límites
+                                de emisiones de CO2 para el año que viene. El mayor grupo político del Parlamento
+                                Europeo
+                                vuelve a meter presión para aliviar estas medidas.</p>
+                            <img src="../assets/noticia1.jpg" alt="imagen noticia1">
+                            <p>La industria automovilística europea se enfrenta a enormes retos en los próximos tiempos.
+                                En
+                                el corto plazo, gigantes como Volkswagen o Stellantis tienen que afrontar profundas
+                                reestructuraciones internas. En el medio plazo, todos los fabricantes deberán afrontar
+                                fuertes sanciones si no cumplen con las emisiones medias de CO2 impuestas por Europa
+                                para el
+                                año que viene.</p>
+                            <p>Y ya en el largo plazo sigue estando el 2035 como fecha límite para que las marcas sigan
+                                vendiendo vehículos con motor de combustión. A este panorama se le suma el
+                                debilitamiento de
+                                la demanda de coches eléctricos a nivel mundial y la presión de las marcas chinas en su
+                                expansión con sus coches más asequibles.</p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia1')">Cerrar</button>
+                        </div>
+                    </div>
+
+
+                    <!-- NoticiaX -->
+                    <div class="col-md-4 noticia">
+                        <h3 class="mt-2">TITULO DE NOTICIA</h3><!--%-->
+                        <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"> <!--%CAMBIAR FOTO-->
+                        <p class="resumen">RESUMEN DE LA NOTICIA</p><!--%-->
+                        <button class="btn btn-primary" onclick="abrirNoticia('#noticiaX')">Leer más</button><!--%-->
+                        <!--%-->
+                        <div class="mas-noticia rounded-3" id="noticiaX"><!--%-->
+                            <h3>TITULO NOTICIA GRANDE</h3><!--%-->
+                            <p>TEXTO</p><!--%-->
+                            <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"><!--%CAMBIAR FOTO-->
+                            <p>MAS TEXTO</p><!--%-->
+                            <p>MUCHO TEXTO</p><!--%-->
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticiaX')">Cerrar</button><!--%-->
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+
+
 
     </main>
 
@@ -77,12 +166,23 @@
             </div>
             <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 MundoMotor.</p>
+                    <p>&copy; 2024 MundoMotor.</p>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
 
+        function abrirNoticia(selector) {
+            $(selector).fadeIn(300); // Muestra con un efecto de desvanecimiento
+        }
+
+        function cerrarNoticia(selector) {
+            $(selector).fadeOut(300); // Oculta con un efecto de desvanecimiento
+        }
+
+
+    </script>
 
 </body>
 
