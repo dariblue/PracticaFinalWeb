@@ -106,7 +106,7 @@ function initMap() {
 $(document).ready(function () {
     $('.tarjeta-motor').on('mouseenter', function () {
         $(this).css({
-            transform: 'scale(1.07)',
+            transform: 'scale(1.05)',
         });
     });
 
