@@ -3,8 +3,8 @@
 
 ## TODO
 
-> - [ ] Inicio (7%)
-> - [ ] Motores (1%)
+> - [ ] Inicio (10%)
+> - [ ] Motores (10%)
 > - [ ] Noticias (40%)
 > - [x] Contacto (99%)
 > - [x] El icono del navbar no redirecciona bien a index.html
@@ -15,6 +15,8 @@
 > - [ ] Añadir partes de motor en forma de galeria a su pagina
 > - [ ] Cokies
 > - [ ] Añadir scroll reveal (Opcional)
+
+tengo que comprobar requisitos de la galeria!
 
 ---
 
