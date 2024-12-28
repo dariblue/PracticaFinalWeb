@@ -20,6 +20,18 @@ tengo que comprobar requisitos de la galeria!
 
 ---
 
+# Pagina Motores
+
+Utilizaremos esta estructura para crear tarjetas para indicar cada parte del motor a forma de galeria
+
+~~~ ```html
+  <div class="tarjeta-motor">
+    <h3>NOMBRE PARTE MOTOR</h3>
+    <img src="" alt="">
+    <p class="tarjeta-resumen">sdaasd</p>
+  </div>
+~~~
+
 # Pagina noticias
 
   La pagina de noticias funciona con la siguiente extructura:
@@ -28,7 +40,7 @@ tengo que comprobar requisitos de la galeria!
 <div class="col-md-4 noticia">
   <h3 class="mt-2">TITULO DE NOTICIA</h3>
   <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"> 
-  <p class="resumen">RESUMEN DE LA NOTICIA</p>
+  <p class="tarjeta-resumen">RESUMEN DE LA NOTICIA</p>
   <button class="btn btn-primary" onclick="abrirNoticia('#noticiaX')">Leer más</button>
    
   <div class="mas-noticia rounded-3" id="noticiaX">

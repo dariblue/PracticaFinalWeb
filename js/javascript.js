@@ -101,3 +101,21 @@ function initMap() {
         title: 'MundoMotor'
     });
 }
+
+// Añadimos Animacines fluidas a las imagenes de motores (Galeria)
+$(document).ready(function () {
+    $('.tarjeta-motor').on('mouseenter', function () {
+        $(this).css({
+            transform: 'scale(1.07)',
+        });
+    });
+
+    $('.tarjeta-motor').on('mouseleave', function () {
+        $(this).css({
+            transform: 'scale(1)',
+            boxShadow: 'none'
+        });
+    });
+});
+
+
