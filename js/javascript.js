@@ -1,12 +1,13 @@
-// TODO Hacer que el @initMap se ejecute despues de cargar la pagina! //
 
+// % Inicialización del mapa
+document.addEventListener('DOMContentLoaded', function () {
+    initMap();
+});
 
-// Inicialización del mapa
 function initMap() {
     // Coordenadas de ejemplo (Madrid)
-    const location = { lat: 40.4168, lng: -3.7038 };
+    const location = { lat: 40.44111087540108, lng: -3.834111959060126 };
 
-    // Estilo oscuro para el mapa
     const darkStyle = [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -97,6 +98,6 @@ function initMap() {
     const marker = new google.maps.Marker({
         position: location,
         map: map,
-        title: 'AutoElite'
+        title: 'MundoMotor'
     });
 }

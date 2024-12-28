@@ -1,17 +1,24 @@
 
 # Buenos dias
 
-TODO
+## TODO
 
-> - [ ] El icono del navbar no redirecciona bien a index.html
-> - [ ] Cokies
-> - [ ] Formulario manda datos a la pagina q dijo el profe
+> - [ ] Inicio (7%)
+> - [ ] Motores (1%)
+> - [ ] Noticias (40%)
+> - [x] Contacto (99%)
+> - [x] El icono del navbar no redirecciona bien a index.html
+> - [x] Formulario manda datos a la pagina q dijo el profe
+> - [x] Navbar no funciona el boton en dispositivos pequeños
+> - [ ] Incluir noticias a noticias.html
 > - [ ] insertar informacion en index para llegar a 3k px
 > - [ ] Añadir partes de motor en forma de galeria a su pagina
-> - [ ] Añadir scroll reveal
-> - [ ] Navbar no funciona el boton en dispositivos pequeños
+> - [ ] Cokies
+> - [ ] Añadir scroll reveal (Opcional)
 
-## Pagina noticias
+---
+
+# Pagina noticias
 
   La pagina de noticias funciona con la siguiente extructura:
 
