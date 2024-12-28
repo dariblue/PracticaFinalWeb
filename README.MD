@@ -16,7 +16,6 @@
 > - [x] Navbar no funciona el boton en dispositivos pequeños
 > - [x] Añadir partes de motor en forma de galeria a su pagina
 
-tengo que comprobar requisitos de la galeria!
 
 ---
 
