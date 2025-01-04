@@ -103,15 +103,6 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.opacidad2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .cabezera {
   position: relative;
   height: 400px;
@@ -180,8 +171,7 @@ body {
   object-fit: cover;
 }
 
-.gif-container {
-
+.separador2 {
   position: relative;
   width: 100%;
   height: 351px;
@@ -297,6 +287,13 @@ body {
   border-color: #ff4d4d;
   color: #ffffff;
   box-shadow: none;
+}
+
+.erroneo {
+  border-color: #ff4d4d;
+  /* color: #ff4d4d; */
+  background-color: #ff4d4d;
+
 }
 
 .btn-formulario {
@@ -418,17 +415,3 @@ footer ul li a:hover {
 }
 
 /* % FIN FOOTER */
-
-
-
-
-
-
-
-
-.erroneo {
-  border-color: #ff4d4d;
-  /* color: #ff4d4d; */
-  background-color: #ff4d4d;
-
-}
