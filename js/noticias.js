@@ -11,3 +11,5 @@ $(document).on('keydown', function (e) {
         $('.mas-noticia:visible').fadeOut(300); // Oculta cualquier noticia visible
     }
 });
+
+ScrollReveal().reveal('.noticia');

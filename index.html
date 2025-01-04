@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/webp" href="../assets/logo.webp">
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MundoMotor</title>
     <!-- Boostrap CSS y JS -->
@@ -49,7 +49,7 @@
                         <li class="nav-item"><a href="html/noticias.html" class="nav-link fw-bold px-3 tx-blanco"><i
                                     class="fa-solid fa-newspaper"></i> Noticias</a></li>
                         <li class="nav-item"><a href="html/contacto.html" class="nav-link fw-bold px-3 tx-blanco"><i
-                                    class="fa-solid fa-address-book"></i> Contáctanos</a></li>
+                                    class="fa-solid fa-address-book"></i> Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -60,7 +60,8 @@
     <main>
         <!-- BackGround -->
         <div class="fondo-pantalla">
-            <div id="carouselExampleAutoplaying" class="carousel slide">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!-- Ferrari -->
                     <div class="carousel-item active">
@@ -98,7 +99,147 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+
+            <section class="container py-5">
+                <div class="row contenedor-oscuro">
+                    <div class="col-md-9">
+                        <h2>Bienvenido a MundoMotor</h2>
+                        <p>Tu destino definitivo para todo lo relacionado con el mundo del motor. Desde las últimas
+                            noticias hasta análisis detallados de los vehículos más emocionantes, MundoMotor te mantiene
+                            al día con la pasión que mueve al mundo automotriz.</p>
+                        <h2>¿Qué encontrarás?</h2>
+                        <p><i class="fa-solid fa-car-battery"></i> <b>Motores: </b> Explora en detalle cada pieza de tu
+                            motor. Desde los pistones hasta el árbol de levas.</p>
+                        <p><i class="fa-regular fa-newspaper"></i> <b>Noticias del Mundo del Motor:</b> Mantente al día
+                            con las últimas novedades en el mundo automovilístico.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/logo.webp" alt="Bienvenida a MundoMotor" width="250px"
+                            class="img-fluid rounded">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Sección de Características Destacadas -->
+            <section class="container my-5">
+                <h2 class="text-center mb-4">Características Destacadas</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4 h">
+                        <div class="tarjeta-servicios h-100">
+                            <i class="fas fa-car"></i>
+                            <h3>Últimos Modelos</h3>
+                            <p>Descubre los vehículos más recientes y sus innovadoras características.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="tarjeta-servicios h-100">
+                            <i class="fas fa-tools"></i>
+                            <h3>Consejos de Mantenimiento</h3>
+                            <p>Aprende a mantener tu vehículo en óptimas condiciones con nuestros expertos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="tarjeta-servicios h-100">
+                            <i class="fas fa-flag-checkered"></i>
+                            <h3>Noticias de Competición</h3>
+                            <p>Mantente al día con las últimas noticias del mundo de las carreras y competiciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="gif-container">
+                <!-- <div class="opacidad2"></div> -->
+            </div>
+
+            <!-- Sección de Vehículos Destacados -->
+            <section class="container my-5">
+                <h2 class="text-center mb-4">Vehículos Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 tarjeta-coche">
+                            <img src="assets/rs6.jpg" class="card-img-top" alt="Vehículo 1">
+                            <div class="card-body">
+                                <h5 class="card-title">ABT Audi RS6-R 2020</h5>
+                                <p class="card-text">Nada menos que 740 CV para llevar a la familia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 tarjeta-coche">
+                            <img src="assets/r8.jpg" class="card-img-top" alt="Vehículo 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Audi R8 GT2 ABT</h5>
+                                <p class="card-text">El ABT XGT envía 640 CV a las ruedas traseras. Y sí, esencialmente,
+                                    es un coche de circuito con matrícula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 tarjeta-coche">
+                            <img src="assets/gt3.jpg" class="card-img-top" alt="Vehículo 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Porsche 911 GT3 RS</h5>
+                                <p class="card-text">Venden el Porsche 911 GT3 RS 991.1 con la decoración de Rayo
+                                    McQueen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Sección de Últimas Noticias -->
+            <section class="container py-5">
+                <h2 class="text-center mb-4">Últimas Noticias</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <img src="assets/Noticias/noticia11.jpg" alt="Noticia 11" class="img-fluid">
+                            <h3>¿Sueles llevar el depósito de combustible del coche medio vacío? Si dejas de hacerlo,
+                                evitarás esta avería</h3>
+                            <p class="tarjeta-resumen">Algo aparentemente tan inofensivo como llevar el depósito de
+                                combustible bastante vacío de forma habitual puede provocar averías costosas en el motor
+                                de tu vehículo.
+                            </p>
+                            <a href="html/noticias.html#Noticia11" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <img src="assets/Noticias/noticia6.jpg" alt="Noticia 6" class="img-fluid">
+                            <h3>Williams publica las primeras (y espectaculares) imágenes oficiales de Carlos Sainz</h3>
+                            <p class="tarjeta-resumen">Carlos Sainz debutó a los mandos del Williams FW46 el pasado mes
+                                de diciembre, pero su contrato con Ferrari impedía a su nuevo equipo distribuir dichas
+                                imágenes. Ahora ya es posible y hemos tenido un primer adelanto.</p>
+                            <a href="html/noticias.html#Noticia6" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <img src="assets/Noticias/noticia7.jpg" alt="Noticia 7" class="img-fluid">
+                            <h3>El Ford Mustang hace historia, es el primer americano que baja de los 7 minutos en
+                                Nürburgring</h3>
+                            <p class="tarjeta-resumen">Lo ha estado persiguiendo durante muchos meses, pero el "Infierno
+                                verde" es demasiado para algunos de los modelos más
+                                deseados del mercado.</p>
+                            <a href="html/noticias.html#Noticia7" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
         </div>
+
     </main>
 
     <footer>
@@ -114,7 +255,7 @@
                         <li><a href="#">Inicio</a></li>
                         <li><a href="/html/motores.html">Motores</a></li>
                         <li><a href="html/noticias.html">Noticias</a></li>
-                        <li><a href="html/contacto.html">Contáctanos</a></li>
+                        <li><a href="html/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -137,6 +278,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/javascript.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 

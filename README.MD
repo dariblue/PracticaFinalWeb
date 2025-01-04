@@ -3,18 +3,20 @@
 
 ## TODO
 
-> - [ ] Inicio (10%)
-> - [ ] Motores (90%)
-> - [ ] Noticias (95%)
+> - [x] Inicio (100%)
+> - [x] Motores (100%)
+> - [x] Noticias (100%)
 > - [x] Contacto (100%)
 > - [x] Cokies
 > - [x] Incluir noticias a noticias.html
-> - [ ] insertar informacion en index para llegar a 3k px
+> - [x] insertar informacion en index para llegar a 3k px
 > - [x] Añadir scroll reveal (Opcional)
 > - [x] El icono del navbar no redirecciona bien a index.html
 > - [x] Formulario manda datos a la pagina q dijo el profe
 > - [x] Navbar no funciona el boton en dispositivos pequeños
 > - [x] Añadir partes de motor en forma de galeria a su pagina
+> - [x] Cambiar CSS con la validación del formulario
+> - [x] Rechazo de cookies te manda a google para que no puedas navegar
 
 ---
 
@@ -41,7 +43,7 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
   </div>
 </div>
 
-~~~
+~~~ ```
 
 ## Pagina noticias
 
@@ -74,7 +76,7 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
 
 
 
-~~~
+~~~ ```
 
 El contenedor `mas-noticia` esta denominado con `display: none;` para que no interfiera en la navegación normal, despues con jquery lo mostramos con una pequeña animación.
 

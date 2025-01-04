@@ -110,50 +110,79 @@ function accederAFormulario(event) {
 
     event.preventDefault();
 
-    let nombre = document.forms["formularioContacto"]["nombre"].value.trim();
-    let apellidos = document.forms["formularioContacto"]["apellidos"].value.trim();
-    let email = document.forms["formularioContacto"]["email"].value.trim();
-    let telefono = document.forms["formularioContacto"]["telefono"].value.trim();
-    let asunto = document.forms["formularioContacto"]["asunto"].value.trim();
-    let mensaje = document.forms["formularioContacto"]["mensaje"].value.trim();
+    let nombre = document.forms["formularioContacto"]["nombre"].value;
+    let apellidos = document.forms["formularioContacto"]["apellidos"].value;
+    let email = document.forms["formularioContacto"]["email"].value;
+    let telefono = document.forms["formularioContacto"]["telefono"].value;
+    let asunto = document.forms["formularioContacto"]["asunto"].value;
+    let mensaje = document.forms["formularioContacto"]["mensaje"].value;
 
     // Expresiones regulares
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let telefonoRegex = /^(\\+34|0034|34)?[6789]\d{8}$/;
 
     if (!nombre) {
-        alert("Por favor, ingrese su nombre.");
-        nombre.classList
+        alert("Por favor, introduzca su nombre.");
+        let campo = document.getElementById('nombre');
+        campo.classList.add('erroneo');
+        alert("Por favor, introduzca su nombre.");
+        campo.addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 
     if (!apellidos) {
-        alert("Por favor, ingrese sus apellidos.");
+        let campo = document.getElementById('apellidos');
+        campo.classList.add('erroneo');
+        alert("Por favor, introduzca sus apellidos.");
+        campo.addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 
     if (!emailRegex.test(email)) {
-        alert("Por favor, ingrese un correo electrónico válido.");
+        let campo = document.getElementById('email');
+        campo.classList.add('erroneo');
+        alert("Por favor, introduzca un correo electrónico válido.");
+        campo.addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 
     if (telefono && !telefonoRegex.test(telefono) || telefono === "") {
+        let campo = document.getElementById('telefono');
         if (telefono === "") {
-            alert("Introduze Un numero de telefono!")
+            alert("Introduzca un número de teléfono.");
+        } else {
+            alert("Por favor, introduzca un número de teléfono válido!");
         }
-        else {
-            alert("Por favor, ingrese un número de teléfono válido!");
-        }
+        campo.classList.add('erroneo');
+        campo.addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 
     if (!asunto) {
+        let campo = document.getElementById('asunto');
+        campo.classList.add('erroneo');
         alert("Por favor, seleccione un asunto.");
+        document.getElementById('asunto').addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 
     if (!mensaje || mensaje.length < 10) {
+        let campo = document.getElementById('mensaje');
+        campo.classList.add('erroneo');
         alert("Por favor, escriba un mensaje de al menos 10 caracteres.");
+        campo.addEventListener('click', function () {
+            this.classList.remove('erroneo');
+        });
         return;
     }
 

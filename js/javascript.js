@@ -31,7 +31,7 @@ function getCookie(name) {
 }
 
 function leerCookie() {
-    if (getCookie("aceptar_cookie") !== "1" && getCookie("rechazar_cookie") !== "1") {
+    if (getCookie("aceptar_cookie") !== "1") {
         document.getElementById("cookieOverlay").style.display = "flex";
     } else {
         document.getElementById("cookieOverlay").style.display = "none";
@@ -45,7 +45,5 @@ function aceptar_cookie() {
 }
 
 function rechazar_cookie() {
-    setCookie("rechazar_cookie", "1", 365);
-    document.getElementById("cookieOverlay").style.display = "none";
-    console.log("Cookies rechazadas");
+    window.location.href = "https://www.google.com";
 }
