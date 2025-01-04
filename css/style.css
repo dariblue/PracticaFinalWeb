@@ -6,12 +6,39 @@ body {
   min-height: 3000px;
 }
 
+/* * Gestion de Cookies * */
+
+.cookie-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-cont {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.cookie-cont button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+/* * Gestion de Cookies * */
+
 .fondo-pantalla {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(334deg, #4b4b4b, #323232, #000000);
   background-size: 180% 180%;
-  animation: animacion-fondo-pantalla 10s ease infinite;
+  animation: animacion-fondo-pantalla 6s ease infinite;
 }
 
 @keyframes animacion-fondo-pantalla {
@@ -172,14 +199,12 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .tarjeta-motor {
     width: 100%;
-    /* Ocupa toda la pantalla */
     margin: 10px 0;
-    /* Margen vertical para separar las tarjetas */
   }
-}
+} */
 
 /* % FIN MOTORES */
 
@@ -188,15 +213,8 @@ body {
 /* % NOTICIAS  */
 
 .noticia {
-  position: relative;
-  background: #f5f5f5;
-  color: black;
-  border-radius: 8px;
   padding: 15px;
-  margin: 20px 15px;
-  width: 31.6%;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .noticia img {
@@ -213,6 +231,7 @@ body {
 .mas-noticia {
   display: none;
   position: fixed;
+  color: black;
   top: 50%;
   left: 50%;
   width: 90%;
@@ -232,14 +251,16 @@ body {
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 .btn-cerrar:hover {
   background: #a71d2a;
+}
+
+.twitter-tweet {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 /* % FIN NOTICIAS  */
@@ -252,6 +273,7 @@ body {
   border: 1px solid #404040;
   color: #ffffff;
   padding: 0.8rem;
+  color: white;
 }
 
 .form-control:focus {
@@ -380,3 +402,17 @@ footer ul li a:hover {
 }
 
 /* % FIN FOOTER */
+
+
+
+
+
+
+
+
+.erroneo {
+  border-color: #ff4d4d;
+  /* color: #ff4d4d; */
+  background-color: #ff4d4d;
+
+}

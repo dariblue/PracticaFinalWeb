@@ -18,7 +18,17 @@
 </head>
 
 <body>
-    <!-- NavBar -->
+    <!--! Cookies ! -->
+    <div id="cookieOverlay" class="cookie-overlay">
+        <div class="cookie-cont rounded-3">
+            <h2>Este sitio utiliza cookies</h2>
+            <p>Usamos cookies para mejorar tu experiencia. Por favor, selecciona una opción:</p>
+            <button id="btnAceptar" class="btn btn-primary">Aceptar</button>
+            <button id="btnRechazar" class="btn btn-secondary">Rechazar</button>
+        </div>
+    </div>
+
+    <!-- % NavBar -->
     <header class="p-3 nav-color">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
@@ -48,7 +58,6 @@
     </header>
 
 
-
     <main>
 
         <div class="cabezera">
@@ -59,9 +68,6 @@
                 <p>Tu destino para la excelencia automotriz</p>
             </div>
         </div>
-
-
-
 
         <!-- contenedor fondo de pantalla -->
         <div class="fondo-pantalla py-3">
@@ -74,30 +80,35 @@
                     <div class="col-lg-6 mb-4 espaciado-2">
                         <h2>¿Quieres contactar con nosotros?</h2>
                         <p>Rellena el formulario y podremos escuchar tus observaciones.</p>
-                        <form id="contactForm" action="https://postman-echo.com/post" method="POST">
+                        <!-- https://postman-echo.com/post   POST -->
+                        <form action="https://postman-echo.com/post" id="formularioContacto" name="formularioContacto"
+                            method="POST">
                             <div class="row">
+                                <!-- %  -->
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="nombre" name="nombre"
-                                        placeholder="Nombre" required>
+                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
                                 </div>
+                                <!-- %  -->
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" name="apellidos" placeholder="Apellidos"
-                                        required>
+                                    <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
                                 </div>
                             </div>
                             <div class="row">
+                                <!-- %  -->
                                 <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                                        required>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email">
                                 </div>
+                                <!-- %  -->
                                 <div class="col-md-6 mb-3">
                                     <input type="tel" class="form-control" id="telefono" name="telefono"
                                         placeholder="Teléfono">
                                 </div>
                             </div>
+                            <!-- %  -->
                             <div class="mb-3">
                                 <input list="asuntos" class="form-control" id="asunto" name="asunto"
-                                    placeholder="Asunto" required>
+                                    placeholder="Asunto">
                                 <datalist id="asuntos">
                                     <option value="Consulta general"></option>
                                     <option value="Soporte técnico"></option>
@@ -105,9 +116,10 @@
                                     <option value="Otros"></option>
                                 </datalist>
                             </div>
+                            <!-- %  -->
                             <div class="mb-3">
                                 <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"
-                                    rows="5" style="height: 150px;" required></textarea>
+                                    rows="5" style="height: 150px;"></textarea>
                             </div>
                             <button type="submit" class="btn btn-formulario">Enviar Mensaje</button>
                         </form>
@@ -158,21 +170,21 @@
                 <div class="row mt-5 espaciado-4">
                     <h2 class="text-center mb-4">Nuestros Servicios</h2>
                     <div class="col-md-4 mb-4">
-                        <div class="tarjeta-servicios">
+                        <div class="tarjeta-servicios h-100">
                             <i class="fa-solid fa-newspaper"></i>
                             <h3>Ultima Hora</h3>
                             <p>Te avisamos de las noticias del mundo del motor</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="tarjeta-servicios">
+                        <div class="tarjeta-servicios h-100">
                             <i class="fas fa-tools"></i>
                             <h3>Servicio Técnico</h3>
                             <p>Mantenimiento y reparación por expertos</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="tarjeta-servicios">
+                        <div class="tarjeta-servicios h-100">
                             <i class="fa-solid fa-circle-info"></i>
                             <h3>Información</h3>
                             <p>Te contamos todo sobre los coches</p>
@@ -194,12 +206,12 @@
                 <div class="opacidad"></div>
             </div>
 
+            <!-- **DATOS DE CONTACTO** -->
             <div class="container my-5">
-                <!-- **DATOS DE CONTACTO** -->
                 <div class="my-5 espaciado-2 row contenedor-oscuro">
                     <h2>Datos de contacto:</h2>
 
-                    <div class="pt-3 col-md-6">
+                    <div class="pt-3 col-md-7">
                         <h4>Autor:</h4>
                         <p> Dario Rodriguez Pajares</p>
 
@@ -212,9 +224,9 @@
                         <h4>Pagina Web:</h4>
                         <a href="https://bestdariblue.tech">bestdariblue.tech</a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <h4>Foto:</h4>
-                        <img src="../assets/FotoDario.JPG" class="ms-5 img-fluid" width="290" alt="Imagen Aventador">
+                        <img src="../assets/FotoDario.JPG" class="img-fluid" width="290" alt="Imagen Aventador">
 
                     </div>
                 </div>
@@ -260,6 +272,12 @@
         async defer></script>
 
     <script src="../js/javascript.js"></script>
+    <script src="../js/contacto.js"></script>
+
+    <script>
+
+
+    </script>
 
 </body>
 

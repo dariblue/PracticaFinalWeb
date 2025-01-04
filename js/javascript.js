@@ -1,121 +1,51 @@
 
-// % Inicialización del mapa
+// % Cargamos la configuracion de las cookies
 document.addEventListener('DOMContentLoaded', function () {
-    initMap();
+    leerCookie();
+    document.getElementById("btnAceptar").addEventListener("click", aceptar_cookie);
+    document.getElementById("btnRechazar").addEventListener("click", rechazar_cookie);
+
 });
 
-function initMap() {
-    // Coordenadas de ejemplo (Madrid)
-    const location = { lat: 40.44111087540108, lng: -3.834111959060126 };
 
-    const darkStyle = [
-        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-        {
-            featureType: "administrative.locality",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#d59563" }],
-        },
-        {
-            featureType: "poi",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#d59563" }],
-        },
-        {
-            featureType: "poi.park",
-            elementType: "geometry",
-            stylers: [{ color: "#263c3f" }],
-        },
-        {
-            featureType: "poi.park",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#6b9a76" }],
-        },
-        {
-            featureType: "road",
-            elementType: "geometry",
-            stylers: [{ color: "#38414e" }],
-        },
-        {
-            featureType: "road",
-            elementType: "geometry.stroke",
-            stylers: [{ color: "#212a37" }],
-        },
-        {
-            featureType: "road",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#9ca5b3" }],
-        },
-        {
-            featureType: "road.highway",
-            elementType: "geometry",
-            stylers: [{ color: "#746855" }],
-        },
-        {
-            featureType: "road.highway",
-            elementType: "geometry.stroke",
-            stylers: [{ color: "#1f2835" }],
-        },
-        {
-            featureType: "road.highway",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#f3d19c" }],
-        },
-        {
-            featureType: "transit",
-            elementType: "geometry",
-            stylers: [{ color: "#2f3948" }],
-        },
-        {
-            featureType: "transit.station",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#d59563" }],
-        },
-        {
-            featureType: "water",
-            elementType: "geometry",
-            stylers: [{ color: "#17263c" }],
-        },
-        {
-            featureType: "water",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#515c6d" }],
-        },
-        {
-            featureType: "water",
-            elementType: "labels.text.stroke",
-            stylers: [{ color: "#17263c" }],
-        },
-    ];
 
-    const map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: location,
-        styles: darkStyle
-    });
-
-    const marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        title: 'MundoMotor'
-    });
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
-// Añadimos Animacines fluidas a las imagenes de motores (Galeria)
-$(document).ready(function () {
-    $('.tarjeta-motor').on('mouseenter', function () {
-        $(this).css({
-            transform: 'scale(1.05)',
-        });
-    });
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
 
-    $('.tarjeta-motor').on('mouseleave', function () {
-        $(this).css({
-            transform: 'scale(1)',
-            boxShadow: 'none'
-        });
-    });
-});
+function leerCookie() {
+    if (getCookie("aceptar_cookie") !== "1" && getCookie("rechazar_cookie") !== "1") {
+        document.getElementById("cookieOverlay").style.display = "flex";
+    } else {
+        document.getElementById("cookieOverlay").style.display = "none";
+    }
+}
 
+function aceptar_cookie() {
+    setCookie("aceptar_cookie", "1", 365);
+    document.getElementById("cookieOverlay").style.display = "none";
+    console.log("Cookies aceptadas");
+}
 
+function rechazar_cookie() {
+    setCookie("rechazar_cookie", "1", 365);
+    document.getElementById("cookieOverlay").style.display = "none";
+    console.log("Cookies rechazadas");
+}

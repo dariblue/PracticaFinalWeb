@@ -18,7 +18,17 @@
 </head>
 
 <body>
-    <!-- NavBar -->
+    <!--! Cookies ! -->
+    <div id="cookieOverlay" class="cookie-overlay">
+        <div class="cookie-cont rounded-3">
+            <h2>Este sitio utiliza cookies</h2>
+            <p>Usamos cookies para mejorar tu experiencia. Por favor, selecciona una opción:</p>
+            <button id="btnAceptar" class="btn btn-primary">Aceptar</button>
+            <button id="btnRechazar" class="btn btn-secondary">Rechazar</button>
+        </div>
+    </div>
+
+    <!-- % NavBar -->
     <header class="p-3 nav-color">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
@@ -58,7 +68,7 @@
             </div>
         </div>
 
-        <div class="fondo-pantalla p-5">
+        <div class="fondo-pantalla py-5 sm-mx-1">
 
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-center my-4">Que partes tiene un motor?</h1>
@@ -203,9 +213,8 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/javascript.js"></script>
-    <script>
-        ScrollReveal().reveal('.card');
-    </script>
+    <script src="../js/motores.js"></script>
+
 </body>
 
 </html>

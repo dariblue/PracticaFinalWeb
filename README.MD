@@ -5,12 +5,12 @@
 
 > - [ ] Inicio (10%)
 > - [ ] Motores (90%)
-> - [ ] Noticias (40%)
-> - [ ] Contacto (90%) -> Falta hacer la confirmacion del formulario por javascript
-> - [ ] Cokies
-> - [ ] Incluir noticias a noticias.html
+> - [ ] Noticias (95%)
+> - [x] Contacto (100%)
+> - [x] Cokies
+> - [x] Incluir noticias a noticias.html
 > - [ ] insertar informacion en index para llegar a 3k px
-> - [ ] Añadir scroll reveal (Opcional) (50%)
+> - [x] Añadir scroll reveal (Opcional)
 > - [x] El icono del navbar no redirecciona bien a index.html
 > - [x] Formulario manda datos a la pagina q dijo el profe
 > - [x] Navbar no funciona el boton en dispositivos pequeños
@@ -46,25 +46,33 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
 ## Pagina noticias
 
   Tiene que incluir al menos 2 videos, asique tendré que hacer al menos un par de noticias con un video al hacer grande la noticia.
+  El pdf solicita que las imagenes y los videos esten ordenados de una forma, pero para mantener el punto de diseño he decidido que será una mejor opcion mostralo como está actualmente
   Hay que añadir un baner!?
   La pagina de noticias funciona con la siguiente extructura:
 
 ~~~ ```html
-<div class="col-md-4 noticia">
-  <h3 class="mt-2">TITULO DE NOTICIA</h3>
-  <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"> 
-  <p class="tarjeta-resumen">RESUMEN DE LA NOTICIA</p>
-  <button class="btn btn-primary" onclick="abrirNoticia('#noticiaX')">Leer más</button>
-   
-  <div class="mas-noticia rounded-3" id="noticiaX">
-    <h3>TITULO NOTICIA GRANDE</h3>
-    <p>TEXTO</p>
-    <img src="IMAGENNOTICIAX" alt="imagenNoticiaX">
-    <p>MAS TEXTO</p>
-    <p>MUCHO TEXTO</p>
-    <button class="btn-cerrar" onclick="cerrarNoticia('#noticiaX')">Cerrar</button>
-  </div>
-</div>
+
+
+<!-- ? NoticiaX -->
+<div class="col-md-6 col-lg-4 mb-4 noticia">
+    <div class="card tarjeta-motor card-body h-100">
+        <h3 class="card-title">Titulo</h3>
+        <img src="../assets/Noticias/noticiaX.jpg" alt="Imagen noticiaX">
+        <p class="tarjeta-resumen"> Resumen noticia </p>
+        <button class="btn btn-primary" onclick="abrirNoticia('#noticiaX')">Leer más</button>
+    </div>
+    <div class="mas-noticia rounded-3 card" id="noticiaX">
+        <h3> Titulo de la noticia</h3>
+        <p>Texto</p>
+        <img src="../assets/Noticias/noticiaX.jpg" alt="imagen noticiaX">
+        <p>texto </p>
+        <p> Parrafo </p>
+        <button class="btn-cerrar" onclick="cerrarNoticia('#noticiaX')">Cerrar</button>
+    </div>
+</div>  
+
+
+
 
 ~~~
 

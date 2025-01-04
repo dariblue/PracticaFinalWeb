@@ -18,6 +18,16 @@
 </head>
 
 <body>
+    <!--! Cookies ! -->
+    <div id="cookieOverlay" class="cookie-overlay">
+        <div class="cookie-cont rounded-3">
+            <h2>Este sitio utiliza cookies</h2>
+            <p>Usamos cookies para mejorar tu experiencia. Por favor, selecciona una opción:</p>
+            <button id="btnAceptar" class="btn btn-primary">Aceptar</button>
+            <button id="btnRechazar" class="btn btn-secondary">Rechazar</button>
+        </div>
+    </div>
+
     <!-- % NavBar -->
     <header class="p-3 nav-color">
         <div class="container">
@@ -69,16 +79,17 @@
                 <h2 class=" text-center mb-4">Últimas Noticias</h2>
                 <div class="row">
 
-
-                    <!-- Noticia 1 -->
-                    <div class="col-md-4 noticia">
-                        <h3 class="mt-2">El Partido Popular Europeo pide eliminar la prohibición de los coches térmicos
-                            en 2035</h3>
-                        <img src="../assets/noticia1.jpg" alt="imagen noticia1">
-                        <p class="tarjeta-resumen">Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo
-                            pide eliminar la prohibición de los coches térmicos en 2035</p>
-                        <button class="btn btn-primary" onclick="abrirNoticia('#noticia1')">Leer más</button>
-
+                    <!-- ? Noticia 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">El Partido Popular Europeo pide eliminar la prohibición de los coches
+                                térmicos
+                                en 2035</h3>
+                            <img src="../assets/Noticias/noticia1.jpg " alt="Imagen ">
+                            <p class="tarjeta-resumen">Ni en Europa se ponen de acuerdo, ahora el Partido Popular
+                                Europeo pide eliminar la prohibición de los coches térmicos en 2035</p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia1')">Leer más</button>
+                        </div>
                         <div class="mas-noticia rounded-3" id="noticia1">
                             <h3>Ni en Europa se ponen de acuerdo, ahora el Partido Popular Europeo pide eliminar la
                                 prohibición de los coches térmicos en 2035</h3>
@@ -87,55 +98,452 @@
                                 de emisiones de CO2 para el año que viene. El mayor grupo político del Parlamento
                                 Europeo
                                 vuelve a meter presión para aliviar estas medidas.</p>
-                            <img src="../assets/noticia1.jpg" alt="imagen noticia1">
+                            <img src="../assets/Noticias/noticia1.jpg" alt="imagen noticia1">
                             <p>La industria automovilística europea se enfrenta a enormes retos en los próximos tiempos.
-                                En
-                                el corto plazo, gigantes como Volkswagen o Stellantis tienen que afrontar profundas
+                                En el corto plazo, gigantes como Volkswagen o Stellantis tienen que afrontar profundas
                                 reestructuraciones internas. En el medio plazo, todos los fabricantes deberán afrontar
                                 fuertes sanciones si no cumplen con las emisiones medias de CO2 impuestas por Europa
-                                para el
-                                año que viene.</p>
+                                para el año que viene.</p>
                             <p>Y ya en el largo plazo sigue estando el 2035 como fecha límite para que las marcas sigan
                                 vendiendo vehículos con motor de combustión. A este panorama se le suma el
-                                debilitamiento de
-                                la demanda de coches eléctricos a nivel mundial y la presión de las marcas chinas en su
-                                expansión con sus coches más asequibles.</p>
+                                debilitamiento de la demanda de coches eléctricos a nivel mundial y la presión de las
+                                marcas chinas en su expansión con sus coches más asequibles.</p>
                             <button class="btn-cerrar" onclick="cerrarNoticia('#noticia1')">Cerrar</button>
                         </div>
                     </div>
 
 
-                    <!-- NoticiaX -->
-                    <div class="col-md-4 noticia">
-                        <h3 class="mt-2">TITULO DE NOTICIA</h3><!--%-->
-                        <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"> <!--%CAMBIAR FOTO-->
-                        <p class="tarjeta-resumen">RESUIMEN DE LA NOTICIA</p><!--%-->
-                        <button class="btn btn-primary" onclick="abrirNoticia('#noticiaX')">Leer más</button><!--%-->
-                        <!--%-->
-                        <div class="mas-noticia rounded-3" id="noticiaX"><!--%-->
-                            <h3>TITULO NOTICIA GRANDE</h3><!--%-->
-                            <p>TEXTO</p><!--%-->
-                            <img src="IMAGENNOTICIAX" alt="imagenNoticiaX"><!--%CAMBIAR FOTO-->
-                            <p>MAS TEXTO</p><!--%-->
-                            <p>MUCHO TEXTO</p><!--%-->
-                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticiaX')">Cerrar</button><!--%-->
+                    <!-- ? Noticia 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">BYD ya tiene fecha para iniciar la producción en Europa.</h3>
+                            <img src="../assets/Noticias/noticia2.jpg" alt="Imagen 2">
+                            <p class="tarjeta-resumen"> Como todo lo que tiene que ver con BYD, las obras de su primera
+                                fábrica en Europa avanzan más rápido de lo esperado. Las instalaciones ya tienen fecha
+                                de inauguración. Millones de euros de ahorro para la marca. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia2')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia2">
+                            <h3>BYD ya tiene fecha para iniciar la producción de sus dos primeros coches en Europa, ya
+                                no tendrá que pagar más aranceles a Europa</h3>
+                            <p>Como todo lo que tiene que ver con BYD, las obras de su primera fábrica en Europa avanzan
+                                más rápido de lo esperado. Las instalaciones ya tienen fecha de inauguración. Millones
+                                de euros de ahorro para la marca.</p>
+                            <img src="../assets/Noticias/noticia2.jpg" alt="imagen noticia2">
+                            <p>Como todo lo que tiene que ver con BYD, las obras de su primera fábrica en Europa avanzan
+                                más rápido de lo esperado. Las instalaciones ya tienen fecha de inauguración. Millones
+                                de euros de ahorro para la marca.</p>
+                            <p> Los últimos resultados han demostrado el enorme crecimiento de la marca BYD,
+                                principalmente a escala local, en China, pero también a nivel internacional. Después de
+                                China, Europa es el mercado en el que venden más coches. A pesar de estos
+                                buenos resultados las políticas europeas no benefician a los intereses de la compañía de
+                                Shenzhen. Los nuevos aranceles fijados por Bruselas obligan a BYD, y a muchas otras
+                                empresas chinas, a pagar importantes cotas portuarias por cada vehículo que cruza los
+                                límites de la Unión Europea. En apenas un año Europa se quedará sin la aportación del
+                                mayor fabricante chino. </p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia2')">Cerrar</button>
                         </div>
                     </div>
 
+                    <!-- ? Noticia 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">Apenas un par de meses de vida, pero este coche eléctrico ya se vende
+                                más que el Tesla Model Y</h3>
+                            <img src="../assets/Noticias/noticia3.jpg " alt="Imagen 3">
+                            <p class="tarjeta-resumen"> El Tesla Model Y fue en 2023 el coche más vendido en todo el
+                                mundo. El éxito del SUV eléctrico puede verse atacado por la llegada de un rival mucho
+                                más pequeño y bastante más divertido. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia3')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia3">
+                            <h3>Apenas tiene un par de meses de vida, pero este coqueto coche eléctrico francés ya se
+                                vende más que el Tesla Model Y</h3>
+                            <p>El Tesla Model Y fue en 2023 el coche más vendido en todo el mundo. El éxito del SUV
+                                eléctrico puede verse atacado por la llegada de un rival mucho más pequeño y bastante
+                                más divertido.</p>
+                            <img src="../assets/Noticias/noticia3.jpg" alt="imagen noticia3">
+                            <p>Cuando tomamos al Tesla Model Y como máxima referencia eléctrica internacional no es por
+                                mero gusto, sino porque las cifras avalan dicha comparativa. En 2023 el Model Y se
+                                convirtió en el coche más popular de todo el mundo. El primer coche eléctrico en recibir
+                                semejante honor y el primer en conseguir desbancar a Toyota en el liderato. Apenas un
+                                año más tarde el SUV americano se tiene que enfrentar a nuevos y poderosos rivales como
+                                el coqueto Renault 5 eléctrico. </p>
+                            <p> En los 12 meses de 2023 el Model Y matriculó, en todo el mundo 1,23 millones de
+                                unidades, un 64% más que en mismo periodo del curso anterior. Hoy sigue siendo el más
+                                vendido de Tesla con una destacada cuota de mercado, aunque cada vez menor dada la cada
+                                vez más numerosa presencia de rivales importantes. Si bien el Renault 5 E-TECH y el
+                                Model Y nada tienen en común, más allá de su eficiente mecánica, las matriculaciones del
+                                modelo galo están siendo más altas de lo esperadas. Al menos en Francia, donde ya ha
+                                desbancando al americano.</p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia3')">Cerrar</button>
+                        </div>
+                    </div>
 
+                    <!-- ? Noticia 4 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">"El hidrógeno es una pérdida de tiempo”, dicen. Esta batería lo
+                                utiliza y sus prestaciones son espectaculares</h3>
+                            <img src="../assets/Noticias/noticia4.jpg" alt="Imagen 4">
+                            <p class="tarjeta-resumen"> Las baterías de metal-hidrógeno de EnerVenue desafían las
+                                críticas al hidrógeno con prestaciones revolucionarias </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia4')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia4">
+                            <h3> "El hidrógeno es una pérdida de tiempo”, dicen. Esta batería lo utiliza y sus
+                                prestaciones son espectaculares</h3>
+                            <p>Las baterías de metal-hidrógeno de EnerVenue desafían las críticas al hidrógeno con
+                                prestaciones revolucionarias: más de 30.000 ciclos, alta seguridad y sostenibilidad. Su
+                                potencial ya está siendo probado por RWE en un ambicioso proyecto de energía renovable.
+                            </p>
+                            <img src="../assets/Noticias/noticia4.jpg" alt="imagen noticia4">
+                            <p>En un panorama energético en el que el hidrógeno se enfrenta a numerosas críticas debido
+                                a las dificultades para integrarlo de manera eficiente en aplicaciones comerciales, la
+                                tecnología metal-hidrógeno de EnerVenue parece desafiar este escepticismo.</p>
+                            <p> Esta compañía, pionera en baterías de metal-hidrógeno, ha demostrado que este elemento
+                                puede tener un papel crucial en el almacenamiento de energía limpia y sostenible. </p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia4')">Cerrar</button>
+                        </div>
+                    </div>
 
+                    <!-- ? Noticia 5 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">¿Quieres jugar gratis a Gran Turismo? Desde hoy puedes hacerlo en PS4
+                                y PS5</h3>
+                            <img src="../assets/Noticias/noticia5.jpg" alt="Imagen noticia5">
+                            <p class="tarjeta-resumen"> Los creadores de Gran Turismo han creado un juego Free to Play
+                                llamado 'My First Gran Turismo' Desde ya puedes jugarlo gratis en PS4 y PS5. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia5')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia5">
+                            <h3> ¿Quieres jugar gratis a Gran Turismo? Desde hoy puedes hacerlo en PS4 y PS5</h3>
+                            <p>Los creadores de Gran Turismo han creado un juego Free to Play llamado 'My First Gran
+                                Turismo' que rememora y homenajea al primero de los Gran Turismo de la historia. Desde
+                                ya puedes jugarlo gratis en PS4 y PS5.
+                            </p>
+                            <img src="../assets/Noticias/noticia5.jpg" alt="imagen noticia5">
+                            <p>Gran Turismo está en el corazón de todos los jugones de videoconsolas y amantes de los
+                                coches y las carreras en general. A cada nueva generación, nos engancha como pocos
+                                videojuegos por su realismo, la adrenalina que desprende, sus gráficos y, sobre todo,
+                                por su enorme colección de coches disponibles. </p>
+                            <p> Con Gran Turismo 7 llevamos ya unos años disfrutando, y todavía quedan unos cuantos más
+                                para tener en las consolas la octava entrega. Sin embargo, desde hoy viernes 6 de
+                                diciembre tenemos disponible una pequeña píldora a modo de regalo anticipado de Navidad.
+                            </p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia5')">Cerrar</button>
+                        </div>
+                    </div>
+                    <!-- ? Noticia 6 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">Williams publica las primeras (y espectaculares) imágenes oficiales
+                                de Carlos Sainz</h3>
+                            <img src="../assets/Noticias/noticia6.jpg" alt="Imagen noticia6">
+                            <p class="tarjeta-resumen"> Carlos Sainz debutó a los mandos del Williams FW46 el pasado mes
+                                de diciembre, pero su contrato con Ferrari impedía a su
+                                nuevo equipo distribuir dichas imágenes. Ahora ya es posible y hemos tenido un primer
+                                adelanto. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia6')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia6">
+                            <h3> Williams publica las primeras (y espectaculares) imágenes oficiales de Carlos Sainz
+                            </h3>
+                            <p>Carlos Sainz debutó a los mandos del Williams FW46 el pasado mes de diciembre, pero su
+                                contrato con Ferrari impedía a su nuevo equipo distribuir dichas imágenes. Ahora ya es
+                                posible y hemos tenido un primer adelanto. </p>
+                            <img src="../assets/Noticias/noticia6.jpg" alt="imagen noticia6">
+                            <p>Se han hecho esperar, pero ya tenemos las primeras imágenes oficiales de Carlos Sainz
+                                como piloto de Williams Racing. El piloto español quedó desvinculado a la Scuderia
+                                Ferrari de manera oficial este mismo 1 de enero, entrando automáticamente en vigor el
+                                contrato con su nuevo equipo. </p>
+                            <p> Un contrato que le vincula uno de los equipos históricos de la Fórmula 1, Williams, por
+                                un mínimo de dos temporadas, y que debe llevarle de vuelta a las posiciones intermedias
+                                de la parrilla tras haber luchado por todo con Ferrari. </p>
 
+                            <p>Aqui te mostramos las imagenes!!</p>
+                            <blockquote class="twitter-tweet">
+                                <p lang="en" dir="ltr">2025, the fight starts now 👊 <a
+                                        href="https://t.co/AE34TdB7uj">pic.twitter.com/AE34TdB7uj</a>
+                                </p>&mdash; Williams Racing (@WilliamsRacing)
+                                <a
+                                    href="https://twitter.com/WilliamsRacing/status/1874427878789820845?ref_src=twsrc%5Etfw">January
+                                    1, 2025</a>
+                            </blockquote>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia6')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia 7 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">El Ford Mustang hace historia, es el primer americano que baja de los
+                                7 minutos en Nürburgring</h3>
+                            <img src="../assets/Noticias/noticia7.jpg" alt="Imagen noticia7">
+                            <p class="tarjeta-resumen"> Lo ha estado persiguiendo durante muchos meses, pero el
+                                "Infierno verde" es demasiado para algunos de los modelos más deseados del mercado.</p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia7')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia7">
+                            <h3> El Ford Mustang hace historia, es el primer americano que baja de los 7 minutos en
+                                Nürburgring</h3>
+                            <p>Lo ha estado persiguiendo durante muchos meses, pero el "Infierno verde" es demasiado
+                                para algunos de los modelos más deseados del mercado. El Ford Mustang GTD ha logrado
+                                batir un nuevo récord en Nürburgring, pero no ha conseguido ser uno de los más rápidos
+                                entre los europeos de su talla. El 911 GT3 aún le queda lejos.</p>
+                            <img src="../assets/Noticias/noticia7.jpg" alt="imagen noticia7">
+                            <p>Tanto la marca del óvalo azul como los técnicos de Ford Performance pueden estar
+                                tranquilos con el récord que han logrado en los 20,8 kilómetros de esa sección norte del
+                                circuito de Nürburgring a la que se han estado enfrentando día tras día desde hace
+                                meses. Sin embargo, aunque el tiempo logrado es uno de los más rápidos, no ha sido
+                                posible a uno que es toda una insignia en estas misiones y en estos desafíos. </p>
+                            <p> Si bien el verdadero objetivo de la marca americana ha sido el Porsche 911 GT3 y sus 6
+                                minutos y 55 segundos, el Ford Mustang GTD puede presumir de ser el primer automóvil de
+                                producción americano que atraviesa el «Infierno Verde» en menos de siete minutos, cosa
+                                de la que no todos los rivales estadounidenses pueden hacer. La verdad es que este
+                                circuito, con sus 73 curvas, le convierten en un escenario complicado, por lo que parar
+                                el crono en nada menos que seis minutos y 57,685 segundos es un sueño para muchos. </p>
+                            <iframe class="rounded-3" width="740" height="438"
+                                src="https://www.youtube.com/embed/YuxuSLB1hg8?si=MYXaVN-DnWY92iMO"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <button class="btn-cerrar mt-3" onclick="cerrarNoticia('#noticia7')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia 8 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">Leclerc ya no está obligado a quedar bien con Carlos Sainz: “Hay
+                                cosas para las que no tienes explicación”</h3>
+                            <img src="../assets/Noticias/noticia8.jpg" alt="Imagen noticia8">
+                            <p class="tarjeta-resumen"> La etapa de Carlos Sainz en Ferrari ha llegado a su fin y
+                                Charles Leclerc ya no tendrá que jugar en equipo con el español. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia8')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia8">
+                            <h3> TLeclerc ya no está obligado a quedar bien con Carlos Sainz: “Hay cosas para las que no
+                                tienes explicación”</h3>
+                            <p>La etapa de Carlos Sainz en Ferrari ha llegado a su fin y Charles Leclerc ya no tendrá
+                                que jugar en equipo con el español. A pesar de eso, el monegasco ha querido opinar sobre
+                                un compañero con el que ha competido intensamente.</p>
+                            <img src="../assets/Noticias/noticia8.jpg" alt="imagen noticia8">
+                            <p>A lo largo de los últimos cuatro años, Carlos Sainz y Charles Leclerc han competido casi
+                                siempre en pequeños márgenes, a veces a favor del español y otras a favor del monegasco.
+                            </p>
+                            <p> Como es lógico, esta intensa rivalidad ha provocado roces y discusiones, si bien casi
+                                nunca han llegado a contactar en la pista. El último desencuentro se produjo en Las
+                                Vegas, cuando Charles Leclerc mostró su descontento con Sainz a través de la radio. </p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia8')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia 9 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">El terrorífico relato de Vowles sobre la situación de Williams, ¿ha
+                                cometido Carlos Sainz el error de su vida?</h3>
+                            <img src="../assets/Noticias/noticia9.jpg" alt="Imagen noticia9">
+                            <p class="tarjeta-resumen">Los últimos años de gestión de la familia Williams sumieron al
+                                equipo en un deterioro extremo. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia9')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia9">
+                            <h3>El terrorífico relato de Vowles sobre la situación de Williams, ¿ha cometido Carlos
+                                Sainz el error de su vida?</h3>
+                            <p>Los últimos años de gestión de la familia Williams sumieron al equipo en un deterioro
+                                extremo. Quienes llegaron después solventaron algunas cosas, pero fue James Vowles quien
+                                se puso realmente manos a la obra. Y Carlos Sainz seguirá sufriendo las consecuencias.
+                            </p>
+                            <img src="../assets/Noticias/noticia9.jpg" alt="imagen noticia9">
+                            <p>En el universo de la Fórmula 1, Williams tiene un significado especial y bastante
+                                prominente. Sin embargo, para los seguidores más jóvenes, Williams podría parecer poco
+                                más que un nombre olvidado en el paddock. </p>
+                            <p> No siempre fue así. Con nueve títulos de constructores, Williams es el segundo equipo
+                                más laureado de la historia, sólo detrás de Ferrari. Sus 114 victorias en Grandes
+                                Premios consolidaron una dinastía que se extendió hasta principios de los años 2000. La
+                                última de ellas fue en 2012, cuando Pastor Maldonado sorprendió al mundo ganando en el
+                                GP de España. </p>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia9')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia 10 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">¿Bebes y conduces? Estos son los efectos detallados que te provoca el
+                                alcohol como conductor</h3>
+                            <img src="../assets/Noticias/noticia10.jpg" alt="Imagen noticia10">
+                            <p class="tarjeta-resumen"> Conducir después de haber ingerido alcohol nunca es una buena
+                                idea.
+                            </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia10')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia10">
+                            <h3>¿Bebes y conduces? Estos son los efectos detallados que te provoca el alcohol como
+                                conductor</h3>
+                            <p>Conducir después de haber ingerido alcohol nunca es una buena idea. Un conductor bajo los
+                                efectos del alcohol se arriesga, más allá de las multas, a ponerse al volante con una
+                                serie de aptitudes completamente alteradas y que elevarían el riesgo de accidente.
+                            </p>
+                            <img src="../assets/Noticias/noticia10.jpg" alt="imagen noticia10">
+                            <p>Cuántas veces hemos escuchado el mantra de «si bebes, no conduzcas», y es algo que
+                                deberíamos respetar al dedillo. Sin embargo, sigue habiendo muchos conductores que a
+                                diario son objeto de pruebas de alcoholemia y que dan positivo, muchos otros que acaban
+                                implicados en algún incidente de tráfico, y muchos otros que no son cazados pero que
+                                siguen siendo un enorme peligro en la carretera. </p>
+                            <p> De sobra es, o así debería serlo, conocido como el alcohol modifica nuestro organismo de
+                                tal forma que se vuelve completamente incompatible con la conducción segura. Ponerse al
+                                volante tras haber bebido alcohol eleva el riesgo de accidente de forma considerable,
+                                hasta el punto de estar implicado en España en uno de cada tres siniestros viales.
+                            </p>
+                            <h5>Así afecta el alcohol al comportamiento del conductor</h5>
+                            <ul>
+                                <li><strong>0,2-0,5 g/l: inicio del riesgo</strong>
+                                    <ul>
+                                        <li>Aumento de los tiempos de reacción.</li>
+                                        <li>Infravaloración de la percepción de la velocidad.</li>
+                                        <li>Problemas de coordinación.</li>
+                                        <li>Comportamiento de tolerancia al riesgo.</li>
+                                        <li>Deterioro del movimiento ocular.</li>
+                                        <li>Primeros fallos en la toma de decisiones.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>0,5-0,8 g/l: alarma, riesgo alto</strong>
+                                    <ul>
+                                        <li>Aumento significativo de los tiempos de reacción.</li>
+                                        <li>Peor percepción de las distancias.</li>
+                                        <li>Reacción retardada general en los movimientos.</li>
+                                        <li>Inicio de la impulsividad y la agresividad.</li>
+                                        <li>Dificultades para ver las luces rojas.</li>
+                                        <li>Alteraciones en la toma de decisiones.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>0,8-1,5 g/l: conducción peligrosa, embriaguez importante</strong>
+                                    <ul>
+                                        <li>Alteración grave de los tiempos de reacción.</li>
+                                        <li>Deterioro de la atención y los reflejos.</li>
+                                        <li>Problemas de coordinación.</li>
+                                        <li>Comportamiento impredecible y más arriesgado.</li>
+                                        <li>Deslumbramientos, visión túnel.</li>
+                                        <li>Adopción de mayores riesgos.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>1,5-2,5 g/l: conducción muy peligrosa, embriaguez total</strong>
+                                    <ul>
+                                        <li>Alteración grave de los tiempos de reacción.</li>
+                                        <li>Graves problemas de atención.</li>
+                                        <li>Pérdida de control de los movimientos.</li>
+                                        <li>Agitación psicomotriz.</li>
+                                        <li>Deslumbramientos, visión doble.</li>
+                                        <li>Toma de decisiones gravemente afectada.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>+3 g/l: incapacidad para la conducción, inconsciencia</strong>
+                                    <ul>
+                                        <li>Sin reacción al volante.</li>
+                                        <li>Pérdida total de reflejos.</li>
+                                        <li>Parálisis en los movimientos.</li>
+                                        <li>Posible coma (+4 g/l).</li>
+                                        <li>Visión anulada.</li>
+                                        <li>Toma de decisiones anulada.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button class="btn-cerrar ali" onclick="cerrarNoticia('#noticia10')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia 11 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">¿Sueles llevar el depósito de combustible del coche medio vacío? Si
+                                dejas de hacerlo, evitarás esta avería</h3>
+                            <img src="../assets/Noticias/noticia11.jpg" alt="Imagen noticia11">
+                            <p class="tarjeta-resumen"> Algo aparentemente tan inofensivo como llevar el depósito de
+                                combustible bastante vacío de forma habitual puede provocar averías costosas en el motor
+                                de tu vehículo. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia11')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia11">
+                            <h3>¿Sueles llevar el depósito de combustible del coche medio vacío? Si dejas de hacerlo,
+                                evitarás esta avería</h3>
+                            <p>Algo aparentemente tan inofensivo como llevar el depósito de combustible bastante vacío
+                                de forma habitual puede provocar averías costosas en el motor de tu vehículo. Te
+                                contamos las causas y lo fácil que resulta evitar que suceda.
+                            </p>
+                            <img src="../assets/Noticias/noticia11.jpg" alt="imagen noticia11">
+                            <p>Los vehículos son máquinas muy sofisticadas y complejas que han alcanzado un alto nivel
+                                de fiabilidad en los tiempos actuales. Sin embargo, algunas de nuestras costumbres como
+                                conductores pueden generar problemas a largo plazo. </p>
+                            <p> Ya te hemos hablado de algunas de esas prácticas perjudiciales, como por ejemplo
+                                exigirle al motor más de la cuenta nada más arrancarlo, descuidar la presión de los
+                                neumáticos o apurar la reserva del depósito de carburante. </p>
+                            <p>Pues bien, exprimir hasta la última gota de combustible no es la única manía relacionada
+                                con el depósito que muchos conductores tienen. También los hay que acostumbran a
+                                mantener el mismo siempre medio vacío, repostando pequeñas cantidades de forma
+                                frecuente.</p>
+
+                            <iframe class="rounded-3" width="740" height="438"
+                                src="https://www.youtube.com/embed/EoTYCV1IFI0"
+                                title="Así puedes saber que no tienes agua en el combustible de tu depósito 💦"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <button class="btn-cerrar" onclick="cerrarNoticia('#noticia11')">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- ? Noticia12 -->
+                    <div class="col-md-6 col-lg-4 mb-4 noticia">
+                        <div class="card tarjeta-motor card-body h-100">
+                            <h3 class="card-title">Previo Dakar 2025: el 'Raptor' Sainz, en busca del quinto Touareg
+                            </h3>
+                            <img src="../assets/Noticias/noticia12.jpg" alt="Imagen noticia12">
+                            <p class="tarjeta-resumen"> A pocos días del inicio del rally más duro del mundo, os traemos
+                                una detallada previa para estar al tanto de toda la información de la edición 2025 del
+                                Dakar, con Carlos Sainz estrenándose con Ford. </p>
+                            <button class="btn btn-primary" onclick="abrirNoticia('#noticia12')">Leer más</button>
+                        </div>
+                        <div class="mas-noticia rounded-3 card" id="noticia12">
+                            <h3>Previo Dakar 2025: el 'Raptor' Sainz, en busca del quinto Touareg</h3>
+                            <p>A pocos días del inicio del rally más duro del mundo, os traemos una detallada previa
+                                para estar al tanto de toda la información de la edición 2025 del Dakar, con Carlos
+                                Sainz estrenándose con Ford.</p>
+                            <img src="../assets/Noticias/noticia12.jpg" alt="imagen noticia12">
+                            <p>A pocas horas de que termine el 2024, las miradas del mundo automovilístico ya están
+                                puestas en el primer evento del 2025: el Rally Dakar, que, como manda la tradición,
+                                marca el inicio del calendario deportivo. </p>
+                            <p> Mientras los participantes ya embarcan hacia Arabia Saudí, y en España ultimamos los
+                                detalles para tomarnos las doce
+                                uvas y dar la bienvenida al nuevo año, os ofrecemos un pequeño aperitivo en forma de
+                                previo para abrir boca. </p>
+
+                            <blockquote class="twitter-tweet">
+                                <p lang="in" dir="ltr">👇 The official route of Dakar 2025!<br>🚩 Bisha - Shubaytah
+                                    🏁<br>🏍 7,706 km (5,146 km of
+                                    SS)<br>🚗 7,759 km (5,115 km of SS)<br><br> 🔜 <a
+                                        href="https://twitter.com/hashtag/Dakar2025?src=hash&amp;ref_src=twsrc%5Etfw">#Dakar2025</a>
+                                    <a
+                                        href="https://twitter.com/hashtag/DakarInSaudi?src=hash&amp;ref_src=twsrc%5Etfw">#DakarInSaudi</a>
+                                    <a href="https://t.co/ImCJH4OClv">pic.twitter.com/ImCJH4OClv</a>
+                                </p>&mdash; DAKAR
+                                RALLY (@dakar) <a
+                                    href="https://twitter.com/dakar/status/1862150809158660595?ref_src=twsrc%5Etfw">November
+                                    28, 2024</a>
+                            </blockquote>
+
+                            <button class="btn-cerrar mt-3" onclick="cerrarNoticia('#noticia12')">Cerrar</button>
+                        </div>
+                    </div>
 
                 </div>
             </section>
 
-
-
-
-
         </div>
-
-
 
     </main>
 
@@ -173,18 +581,11 @@
             </div>
         </div>
     </footer>
-    <script>
 
-        function abrirNoticia(selector) {
-            $(selector).fadeIn(300); // Muestra con un efecto de desvanecimiento
-        }
-
-        function cerrarNoticia(selector) {
-            $(selector).fadeOut(300); // Oculta con un efecto de desvanecimiento
-        }
-
-
-    </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/noticias.js"></script>
 
 </body>
 
