@@ -122,7 +122,6 @@ function accederAFormulario(event) {
     let telefonoRegex = /^(\\+34|0034|34)?[6789]\d{8}$/;
 
     if (!nombre) {
-        alert("Por favor, introduzca su nombre.");
         let campo = document.getElementById('nombre');
         campo.classList.add('erroneo');
         alert("Por favor, introduzca su nombre.");
