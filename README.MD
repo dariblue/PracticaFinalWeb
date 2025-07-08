@@ -30,8 +30,9 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
 
   Mas o menos está termianda esta pagina, se podria cambiar la imagen de inicio pero cumple con los requisitos
   Se ha utilizado jQuery para crear animaciones de una manera mas sencilla.
-  > Posible edicion de scroll reveal.
-  Utilizaremos esta estructura para crear tarjetas para indicar cada parte del motor a forma de galeria.
+  > Posible edicion de scroll reveal.  
+
+Utilizaremos esta estructura para crear tarjetas para indicar cada parte del motor a forma de galeria.
 
 ~~~ ```html
 
@@ -43,7 +44,7 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
   </div>
 </div>
 
-~~~ ```
+~~~
 
 ## Pagina noticias
 
@@ -53,7 +54,6 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
   La pagina de noticias funciona con la siguiente extructura:
 
 ~~~ ```html
-
 
 <!-- ? NoticiaX -->
 <div class="col-md-6 col-lg-4 mb-4 noticia">
@@ -73,10 +73,7 @@ idea: Puedo añadir un enlaze a faceboock estilo reseñas de clientes
     </div>
 </div>  
 
-
-
-
-~~~ ```
+~~~
 
 El contenedor `mas-noticia` esta denominado con `display: none;` para que no interfiera en la navegación normal, despues con jquery lo mostramos con una pequeña animación.
 
